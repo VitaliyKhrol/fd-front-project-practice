@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer';
 import styles from './Home.module.sass';
 import carouselConstants from '../../carouselConstants';
 import Spinner from '../../components/Spinner/Spinner';
+import GotQuenstions from '../../components/GotQuestions';
 
 const Home = (props) => {
   const [index, setIndex] = useState(0);
@@ -65,7 +66,7 @@ const Home = (props) => {
                     name ideas from world's largest community of naming experts.
                     With 75,000+ creatives and 15,000+ successful naming projects,
                     Squadhelp is by far the largest naming platform across the globe .
-</p>
+                  </p>
                 </div>
                 <div className={styles.card}>
                   <img
@@ -78,7 +79,7 @@ const Home = (props) => {
                     we ensure that you receive more ideas from our top-quality creatives,
                     and Gamification best practices ensure two-way communication throughout your
                     contest.
-</p>
+                  </p>
                 </div>
                 <div className={styles.card}>
                   <img
@@ -91,7 +92,7 @@ const Home = (props) => {
                     demographics to get unbiased feedback on your favorite names.
                     Also receive Trademark support from our team of Licensed Trademark Attorneys,
                     so you can pick your name with confidence.
-</p>
+                  </p>
                 </div>
               </div>
             </div>
@@ -146,9 +147,9 @@ const Home = (props) => {
                   <p>
                     <i className="fas fa-check" />
                     <span>
-                        We’ll walk you through exactly what you need to share about your project
-                        in order to get an awesome Name
-</span>
+                      We’ll walk you through exactly what you need to share about your project
+                      in order to get an awesome Name
+                    </span>
                   </p>
                 </div>
                 <img src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/1-compressed.gif`} alt="compressed" />
@@ -189,6 +190,9 @@ const Home = (props) => {
                 </div>
                 <img src={`${CONSTANTS.STATIC_IMAGES_PATH}gif/3-compressed.gif`} alt="compressed" />
               </div>
+            </div>
+            <div>
+              <GotQuenstions />
             </div>
             <div className={styles.headerBar}>
               <h3>Names For Sale</h3>
