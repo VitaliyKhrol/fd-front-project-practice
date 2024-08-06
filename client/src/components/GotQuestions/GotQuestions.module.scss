@@ -1,9 +1,12 @@
+
+
 $background-gradient: linear-gradient(to right, #00c6ff, #0072ff);
 $text-color: #ffffff;
 $link-color: #0000ff;
 $button-background-color: rgba(255, 255, 255, 0.3);
 
 .container {
+  
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -14,17 +17,19 @@ $button-background-color: rgba(255, 255, 255, 0.3);
   color: $text-color;
   margin: 80px auto 0 auto;
   justify-content: space-between;
-}
-  .text {
+
+  .left {
     display: flex;
+   
     flex-direction: column;
     max-width: 320px;
-    text-align: flex-start;
-
-    h2 {
+    
+    .textH2 { 
+      display: flex;
       margin: 0 0 10px 0;
       font-size: 32px;
       font-weight: 700;
+      align-items: flex-start;
     }
 
     p {
@@ -38,8 +43,8 @@ $button-background-color: rgba(255, 255, 255, 0.3);
       text-decoration: underline;
     }
   }
-
-  .buttons {
+}
+  .right {
     display: flex;
     width: 280px;
     line-height: 48px;
